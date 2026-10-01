@@ -6,11 +6,7 @@ Open `index.html` to preview, or serve this directory with any static web server
 
 ## Before using for applications
 
-Update the clearly marked `PORTFOLIO` configuration at the top of `script.js`:
-
-- BLL VR Therapy GitHub repository URL.
-
-LinkedIn, the MIKLOSET repository, and all three project GIFs are configured. Optional: clear `media.mikloset` to display the three mobile screenshot slots, then configure Closet, AI Stylist, and Saved Looks image paths.
+LinkedIn, all three project repositories, and all three project GIFs are configured in the clearly marked `PORTFOLIO` configuration at the top of `script.js`. Optional: clear `media.mikloset` to display the three mobile screenshot slots, then configure Closet, AI Stylist, and Saved Looks image paths.
 
 `assets/DevResume2026.pdf` contains your supplied resume, copied from the Desktop file of the same name.
 

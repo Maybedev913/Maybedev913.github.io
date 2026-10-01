@@ -8,7 +8,7 @@ const PORTFOLIO = {
     resume: '/assets/DevResume2026.pdf',
     email: 'mailto:devpatk@gmail.com',
     racing: 'https://github.com/Maybedev913/PolygenceProject',
-    vr: '', // TODO: BLL VR Therapy GitHub repository URL.
+    vr: 'https://github.com/Maybedev913/BILVRTHerapy',
     mikloset: 'https://github.com/Maybedev913/mikloset-mobile',
   },
   media: {
