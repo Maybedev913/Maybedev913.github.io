@@ -14,6 +14,7 @@ const PORTFOLIO = {
   media: {
     racing: 'assets/projects/racing.gif',
     vr: 'assets/projects/vr.gif',
+    vrPresentation: 'assets/projects/vr-presentation.png',
     mikloset: 'assets/projects/mikloset.gif', // Clear to show the three screenshot slots below instead.
     closet: '', // TODO: e.g. 'assets/projects/closet.webp'
     stylist: '', // TODO: e.g. 'assets/projects/stylist.webp'
@@ -37,7 +38,7 @@ document.querySelectorAll('[data-link]').forEach(link => {
 
 const mediaDescriptions = {
   racing: 'Multi-Car Racing reinforcement-learning demonstration',
-  vr: 'BLL VR Therapy immersive experience',
+  vr: 'VR Exposure Therapy immersive experience',
   mikloset: 'MIKLOSET mobile application walkthrough',
   closet: 'MIKLOSET digital closet screen',
   stylist: 'MIKLOSET AI stylist screen',
@@ -50,7 +51,24 @@ document.querySelectorAll('[data-media]').forEach(container => {
   image.className = 'replacement-image';
   image.alt = mediaDescriptions[container.dataset.media];
   image.decoding = 'async';
-  image.onload = () => container.replaceChildren(image);
+  image.onload = () => {
+    container.replaceChildren(image);
+    if (container.dataset.media === 'vr' && PORTFOLIO.media.vrPresentation) {
+      const figure = document.createElement('figure');
+      figure.className = 'project-photo';
+      const photo = document.createElement('img');
+      photo.src = PORTFOLIO.media.vrPresentation;
+      photo.alt = 'Dev Pathak and a collaborator presenting the Physioadaptive VR therapy project with a research poster and Meta Quest headset';
+      photo.loading = 'lazy';
+      photo.decoding = 'async';
+      photo.width = 1024;
+      photo.height = 768;
+      const caption = document.createElement('figcaption');
+      caption.textContent = 'Physioadaptive VR — project presentation';
+      figure.append(photo, caption);
+      container.after(figure);
+    }
+  };
   // Load near the viewport; detached images cannot use native lazy loading.
   if ('IntersectionObserver' in window) {
     const mediaObserver = new IntersectionObserver(entries => {
