@@ -7,7 +7,7 @@ const PORTFOLIO = {
     linkedin: 'https://www.linkedin.com/in/devpathak21',
     resume: '/assets/DevResume2026.pdf',
     email: 'mailto:devpatk@gmail.com',
-    racing: '', // TODO: Multi-Car Racing GitHub repository URL.
+    racing: 'https://github.com/Maybedev913/PolygenceProject',
     vr: '', // TODO: BLL VR Therapy GitHub repository URL.
     mikloset: 'https://github.com/Maybedev913/mikloset-mobile',
   },
