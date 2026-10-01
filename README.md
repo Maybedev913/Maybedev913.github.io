@@ -8,17 +8,12 @@ Open `index.html` to preview, or serve this directory with any static web server
 
 Update the clearly marked `PORTFOLIO` configuration at the top of `script.js`:
 
-- LinkedIn profile URL.
 - Multi-Car Racing GitHub repository URL.
 - BLL VR Therapy GitHub repository URL.
-- MIKLOSET Mobile GitHub repository URL.
-- Racing screenshot or GIF path.
-- VR screenshot or GIF path (a video thumbnail can link to a demo by editing the HTML).
-- MIKLOSET Closet screenshot path.
-- MIKLOSET AI Stylist screenshot path.
-- MIKLOSET Saved Looks screenshot path.
 
-Replace `assets/DevResume2026.pdf` with your actual resume. The included file is a clearly labeled placeholder, not a generated resume.
+LinkedIn, the MIKLOSET repository, and all three project GIFs are configured. Optional: clear `media.mikloset` to display the three mobile screenshot slots, then configure Closet, AI Stylist, and Saved Looks image paths.
+
+`assets/DevResume2026.pdf` contains your supplied resume, copied from the Desktop file of the same name.
 
 Blank repository and LinkedIn links are disabled and visibly marked. Project illustrations are placeholders and are replaced automatically after configured images load successfully. If an image fails to load, the placeholder remains.
 
